@@ -36,7 +36,7 @@ def velocidad_test():
 
 
 def save_results(down_speed, up_speed, ping):
-    """Guarda los resultados en un archivo JSON con la fecha y hora."""
+    #Guarda los resultados en un archivo JSON con la fecha y hora
     results = {
         "Fecha": str(datetime.now()),
         "Download_Mbps": down_speed,
