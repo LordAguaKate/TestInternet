@@ -44,6 +44,8 @@ def save_results(down_speed, up_speed, ping):
         "Ping_ms": ping
     }
 
+    os.makedirs("data", exist_ok=True)
+
     with open("../data/resultados.json", "a") as file:
         json.dump(results, file)
         file.write("\n")
